@@ -41,6 +41,7 @@ struct Contact
         os<<" name: "<<contact.name<<" address: "<<contact.address;
         return os;
     }
+    ~Contact(){ delete address;};
 };
 int main()
 {
